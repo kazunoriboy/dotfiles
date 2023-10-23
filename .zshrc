@@ -20,6 +20,10 @@ alias la='ls -la --color=always'
 alias ll='ls -l --color=always'
 alias mkdir='mkdir -p'
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+alias vi="nvim"
+alias vim="nvim"
+alias view="nvim -R"
+
 
 autoload -Uz compinit && compinit
 
