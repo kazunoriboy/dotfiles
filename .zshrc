@@ -13,7 +13,10 @@ export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="/usr/local/Cellar/dosfstools/4.2/sbin:$PATH"
 export PATH="/Users/matsushima/development/flutter/bin:$PATH"
 export PATH="/Users/matsushima/.local/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/ruby/lib"
+export CPPFLAGS="-I/usr/local/opt/ruby/include"
 export DISPLAY=:0.0
+export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 alias ls='ls -F --color=always'
 alias la='ls -la --color=always'
@@ -67,5 +70,5 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/Cellar/tfenv/3.0.0/versions/1.5.5/terraform terraform
