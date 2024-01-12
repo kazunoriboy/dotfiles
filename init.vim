@@ -1,3 +1,14 @@
+call plug#begin()
+Plug 'easymotion/vim-easymotion'
+Plug 'lambdalisue/fern.vim'
+Plug 'navarasu/onedark.nvim'
+Plug 'mattn/emmet-vim'
+Plug 'github/copilot.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+call plug#end()
+colorscheme onedark
+
 set autoindent
 set cursorline
 set clipboard+=unnamed
@@ -129,19 +140,4 @@ nnoremap fm :Marks<CR>
 nnoremap fh :History<CR>
 " fcでコミット履歴検索を開く
 nnoremap fc :Commits<CR>
-
-if has('nvim')
-    call plug#begin('~/.local/share/nvim/plugged')
-    Plug 'easymotion/vim-easymotion'
-    Plug 'lambdalisue/fern.vim'
-    Plug 'navarasu/onedark.nvim'
-    Plug 'mattn/emmet-vim'
-    Plug 'github/copilot.vim'
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
-    call plug#end()
-    if filereadable(expand("~/.local/share/nvim/plugged/onedark.vim/colors/onedark.vim"))
-        colorscheme onedark
-    endif
-end
 
