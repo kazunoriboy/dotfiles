@@ -27,7 +27,6 @@ alias vi="nvim"
 alias vim="nvim"
 alias view="nvim -R"
 
-
 autoload -Uz compinit && compinit
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
@@ -35,40 +34,12 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 setopt no_beep
 setopt nonomatch
 
-lg() {
-    export LAZYGIT_NEW_DIR_FILE=~/.lazygit/newdir
-
-    lazygit "$@"
-
-    if [ -f $LAZYGIT_NEW_DIR_FILE ]; then
-            cd "$(cat $LAZYGIT_NEW_DIR_FILE)"
-            rm -f $LAZYGIT_NEW_DIR_FILE > /dev/null
-    fi
-}
-
-function gitmain() {
-  git config --global user.name "kazunoriboy"
-  git config --global user.email "matunorigmnw@gmail.com"
-}
-
-function gitsub() {
-  git config --global user.name "kazunori-matsushima"
-  git config --global user.email "k.matsushima@crefil.com"
-}
-
-plugins=(
-    zsh-autosuggestions
-)
-
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/Cellar/tfenv/3.0.0/versions/1.5.5/terraform terraform
