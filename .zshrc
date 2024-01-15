@@ -18,9 +18,11 @@ export LDFLAGS="-L/usr/local/opt/ruby/lib"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
 export DISPLAY=:0.0
 
-alias ls='ls -F --color=always'
-alias la='ls -la --color=always'
-alias ll='ls -l --color=always'
+alias ci='circleci'
+alias g='gitui'
+alias la='exa -la --color=always'
+alias ls='exa -F --color=always'
+alias ll='exa -l --color=always'
 alias mkdir='mkdir -p'
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 alias vi="nvim"
