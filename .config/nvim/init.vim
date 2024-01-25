@@ -77,10 +77,10 @@ syntax enable
 let g:onedark_termcolors=16
 
 function! s:VSetSearch(cmdtype)
-  let temp = @s
-  norm! gv"sy
-  let @/ = '\V' . substitute(escape(@s, a:cmdtype.'\'), '\n', '\\n', 'g')
-  let @s = temp
+    let temp = @s
+    norm! gv"sy
+    let @/ = '\V' . substitute(escape(@s, a:cmdtype.'\'), '\n', '\\n', 'g')
+    let @s = temp
 endfunction
 
 function! AddIndentWhenEnter()
@@ -104,12 +104,12 @@ endif
 " Ctrl+pでファイル検索を開く
 " git管理されていれば:GFiles、そうでなければ:Filesを実行する
 fun! FzfOmniFiles()
-  let is_git = system('git status')
-  if v:shell_error
-    :Files
-  else
-    :GFiles
-  endif
+    let is_git = system('git status')
+    if v:shell_error
+        :Files
+    else
+        :GFiles
+    endif
 endfun
 nnoremap <C-p> :call FzfOmniFiles()<CR>
 
@@ -141,3 +141,8 @@ nnoremap fh :History<CR>
 " fcでコミット履歴検索を開く
 nnoremap fc :Commits<CR>
 
+highlight Normal ctermbg=none guibg=none
+highlight NonText ctermbg=none guibg=none
+highlight LineNr ctermbg=none guibg=none
+highlight Folded ctermbg=none guibg=none
+highlight EndOfBuffer ctermbg=none guibg=none
