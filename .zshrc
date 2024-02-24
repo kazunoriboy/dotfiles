@@ -43,3 +43,4 @@ autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/Cellar/tfenv/3.0.0/versions/1.5.5/terraform terraform
 
 eval "$(zoxide init zsh)"
+
