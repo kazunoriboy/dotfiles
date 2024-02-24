@@ -150,7 +150,7 @@ highlight EndOfBuffer ctermbg=none guibg=none
 
 " terminalモードの設定
 " 新規タブでターミナルモードを開く
-nnoremap <slilent> tt <cmd>terminal<CR>
+nnoremap <silent> tt <cmd>terminal<CR>
 " 下分割でターミナルモードを起動
 nnoremap <silent> tx <cmd>belowright new<CR><cmd>terminal<CR>
 " ターミナルモードを開いたらinsertモードに入る
