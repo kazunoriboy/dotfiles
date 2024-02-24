@@ -20,9 +20,9 @@ export DISPLAY=:0.0
 
 alias ci='circleci'
 alias g='gitui'
-alias la='exa -la --color=always'
-alias ls='exa -F --color=always'
-alias ll='exa -l --color=always'
+alias la='eza -la --color=always'
+alias ls='eza -F --color=always'
+alias ll='eza -l --color=always'
 alias mkdir='mkdir -p'
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 alias vi="nvim"
