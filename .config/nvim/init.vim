@@ -147,3 +147,14 @@ highlight NonText ctermbg=none guibg=none
 highlight LineNr ctermbg=none guibg=none
 highlight Folded ctermbg=none guibg=none
 highlight EndOfBuffer ctermbg=none guibg=none
+
+" terminalモードの設定
+" 新規タブでターミナルモードを開く
+nnoremap <slilent> tt <cmd>terminal<CR>
+" 下分割でターミナルモードを起動
+nnoremap <silent> tx <cmd>belowright new<CR><cmd>terminal<CR>
+" ターミナルモードを開いたらinsertモードに入る
+autocmd TermOpen * :startinsert
+" ターミナルモードで行番号を非表示
+autocmd TermOpen * setlocal norelativenumber
+autocmd TermOpen * setlocal nonumber
