@@ -158,3 +158,6 @@ autocmd TermOpen * :startinsert
 " ターミナルモードで行番号を非表示
 autocmd TermOpen * setlocal norelativenumber
 autocmd TermOpen * setlocal nonumber
+
+" fernで隠しフィアルを表示する
+let g:fern#default_hidden=1
