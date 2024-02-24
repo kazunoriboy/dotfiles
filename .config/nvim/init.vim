@@ -6,6 +6,7 @@ Plug 'mattn/emmet-vim'
 Plug 'github/copilot.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'is0n/fm-nvim'
 call plug#end()
 colorscheme onedark
 
