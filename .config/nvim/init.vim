@@ -33,6 +33,7 @@ set shiftwidth=4
 set smartindent
 set tabstop=4
 set wildmenu
+set wildmode=full
 
 augroup fileTypeIndent
     autocmd!
