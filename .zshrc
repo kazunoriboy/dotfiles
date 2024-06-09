@@ -5,7 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-eval "$(pyenv init -)"
+eval $(/opt/homebrew/bin/brew shellenv)
 
 export PS1="%d %% "
 export LESS="-iRMXS"
