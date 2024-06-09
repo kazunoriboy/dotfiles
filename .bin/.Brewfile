@@ -7,7 +7,6 @@ tap "homebrew/core"
 tap "aws/tap"
 
 brew "bat"
-brew "docker"
 brew "dog"
 brew "eza"
 brew "fx"
