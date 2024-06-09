@@ -161,3 +161,10 @@ autocmd TermOpen * setlocal nonumber
 
 " fernで隠しフィアルを表示する
 let g:fern#default_hidden=1
+
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
+
+nnoremap <Leader>n :noh<CR>
+
+
