@@ -14,6 +14,8 @@ export PATH="/usr/local/Cellar/dosfstools/4.2/sbin:$PATH"
 export PATH="/Users/matsushima/development/flutter/bin:$PATH"
 export PATH="/Users/matsushima/.local/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.docker/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/ruby/lib"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
 export DISPLAY=:0.0
@@ -44,3 +46,15 @@ complete -o nospace -C /usr/local/Cellar/tfenv/3.0.0/versions/1.5.5/terraform te
 
 eval "$(zoxide init zsh)"
 
+
+# Created by `pipx` on 2024-09-23 08:01:54
+export PATH="$PATH:/Users/matsushimaittoku/.local/bin"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/matsushimaittoku/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/matsushimaittoku/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/matsushimaittoku/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/matsushimaittoku/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Added by Windsurf
+export PATH="/Users/matsushimaittoku/.codeium/windsurf/bin:$PATH"
