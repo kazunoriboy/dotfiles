@@ -25,6 +25,7 @@ alias g='gitui'
 alias la='eza -la --color=always'
 alias ls='eza -F --color=always'
 alias ll='eza -l --color=always'
+alias lzd='lazydocker'
 alias mkdir='mkdir -p'
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 alias vi="nvim"
